@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-luminous">
+        <div class="header-overlay">
+            <img src="image.png.jpg" alt="ALENA MOTORSPORT">
+        </div>
+    </header>
+    <main>
+        <h1 class="main-title">Solicitud de Crédito</h1>
+        <form>
+            <div>
+                <h2>Información Personal</h2>
+                <label for="fullName">Nombre Completo</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="dob">Fecha de Nacimiento</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="social">Social/ITIN</label>
+                <input type="text" id="social" name="social" required>
+
+                <label for="creditScore">Puntaje de Crédito</label>
+                <input type="number" id="creditScore" name="creditScore" required>
+
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="license">Licencia de Conducir</label>
+                <input type="text" id="license" name="license" required>
+
+                <label for="currentAddress">Dirección Actual</label>
+                <input type="text" id="currentAddress" name="currentAddress" required>
+
+                <label for="city">Ciudad</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="zip">Código Postal</label>
+                <input type="text" id="zip" name="zip" required>
+
+                <label for="ownerRenter">Propietario/Inquilino</label>
+                <select id="ownerRenter" name="ownerRenter">
+                    <option value="owner">Propietario</option>
+                    <option value="renter">Inquilino</option>
+                </select>
+
+                <label for="monthlyPayment">Pago Mensual</label>
+                <input type="number" id="monthlyPayment" name="monthlyPayment" required>
+
+                <label for="howLong">¿Cuánto Tiempo?</label>
+                <input type="text" id="howLong" name="howLong" required>
+            </div>
+
+            <div>
+                <h2>Información de Empleo</h2>
+                <label for="currentEmployer">Empleo Actual</label>
+                <input type="text" id="currentEmployer" name="currentEmployer" required>
+
+                <label for="employerAddress">Dirección del Empleo</label>
+                <input type="text" id="employerAddress" name="employerAddress" required>
+
+                <label for="occupation">Ocupación</label>
+                <input type="text" id="occupation" name="occupation" required>
+
+                <label for="monthlyIncome">Ingreso Mensual</label>
+                <input type="number" id="monthlyIncome" name="monthlyIncome" required>
+
+                <label for="incomeType">Tipo de Ingreso</label>
+                <select id="incomeType" name="incomeType">
+                    <option value="w2">W2</option>
+                    <option value="1099">1099</option>
+                    <option value="selfEmployed">Autoempleado</option>
+                </select>
+            </div>
+
+            <div>
+                <h2>Información del Vehículo</h2>
+                <label for="makeModel">Marca y Modelo</label>
+                <input type="text" id="makeModel" name="makeModel" required>
+
+                <label for="vin">Últimos 6 del VIN</label>
+                <input type="text" id="vin" name="vin" required>
+
+                <label for="downPayment">Pago Inicial Deseado</label>
+                <input type="number" id="downPayment" name="downPayment" required>
+
+                <label for="monthlyPaymentDesired">Pago Mensual Deseado</label>
+                <input type="number" id="monthlyPaymentDesired" name="monthlyPaymentDesired" required>
+            </div>
+
+            <button class="submit-btn pulse" type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+</body>
+</html>
